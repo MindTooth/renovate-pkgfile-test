@@ -1,0 +1,22 @@
+# syntax = ghcr.io/siderolabs/bldr:v0.5.5
+
+format: v1alpha2
+
+vars:
+  # renovate: datasource=github-tags depName=raspberrypi/firmware
+  raspberrypi_firmware_version: 1.20250915
+  raspberrypi_firmware_sha256: 55a5d58c59bf7171562f1f1289c638e97e2b8d90374084887bfe5fc83e57cb1d
+  raspberrypi_firmware_sha512: 33120c901c59fbcd267427dce5fd8f174d32476bfae76744697f6729151d66054c6f0bd54f29c3b715c1492a52724fe2973a6adbf31cfb79f1c82dd94983cf77
+
+  # renovate: datasource=github-tags extractVersion=^v(?<version>.*)$ depName=u-boot/u-boot
+  uboot_version: 2026.01-rc4
+  uboot_sha256: 82400f98fc7642c7b9cbb6ae583235f3495f5bd43a0b92c7c308c1fb667c5ad4
+  uboot_sha512: 8a00f172cac19d4a820898ed09edbf58b60fe500ad3178e11d9c47db6103961ea5c50184f0ee6af0bd82d7a0bd000a17ec7ef5170b073b0601689f3e857eeeba
+
+  # renovate: datasource=github-tags depName=revolutionpi/linux
+  revpi_kernel_version: v6.6.46-rt39-revpi7
+  revpi_kernel_sha256: 3b56e21be6ddc5771e1ffe5af21c52cb78d47a72aa5b5a77d1ba60b211d3f006
+  revpi_kernel_sha512: 683684333616c99f9b08e7465041862b01056840f4eb3eb9cc2a957d69f3b86cbf98c23199a8d1c5d919944233f9c866d6467a2a6aa965fb6c77621eb96a7fe2
+
+labels:
+  org.opencontainers.image.source: https://github.com/siderolabs/sbc-raspberrypi

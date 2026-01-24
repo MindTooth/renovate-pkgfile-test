@@ -40,11 +40,11 @@
       "matchFileNames": [".github/workflows/*.yaml"]
     },
     {
-      "versioning": "regex:^lts-v(?<major>\\d+)\\.(?<minor>\\d+)\\.?(?<patch>\\d+)?$",
+      "versioning": "regex:^((?<compatibility>\\S+)-)?v(?<major>\\d+)\\.(?<minor>\\d+)\\.?(?<patch>\\d+)?$",
       "matchPackageNames": ["ARM-software/arm-trusted-firmware"]
     },
     {
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)(-(?<prerelease>.*))?$",
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)(?<prerelease>-)?(rc(?<build>\\d+))?$",
       "matchPackageNames": ["MindTooth/u-boot", "u-boot/u-boot"]
     },
     {

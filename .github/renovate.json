@@ -45,7 +45,7 @@
     },
     {
       "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)(-(?<prerelease>.*))?$",
-      "matchPackageNames": ["u-boot/u-boot"]
+      "matchPackageNames": ["MindTooth/u-boot", "u-boot/u-boot"]
     },
     {
       "versioning": "regex:^\\d+\\.(?<major>\\d{4})(?<minor>\\d{2})(?<patch>\\d{2})$",

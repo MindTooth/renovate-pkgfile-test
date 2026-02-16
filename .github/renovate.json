@@ -44,7 +44,7 @@
       "matchPackageNames": ["ARM-software/arm-trusted-firmware"]
     },
     {
-      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)(?<prerelease>-)?(rc(?<build>\\d+))?$",
+      "versioning": "regex:^(?<major>\\d+)\\.(?<minor>\\d+)(?<prerelease>-rc\\d+)?$",
       "matchPackageNames": ["MindTooth/u-boot", "u-boot/u-boot"]
     },
     {
